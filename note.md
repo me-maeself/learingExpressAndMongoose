@@ -97,3 +97,12 @@ app.listen(3000, () => {
   - using findByIdAndDelete()
 - Adding delete button in show.ejs
   - Button would hit `:id?_method=DELETE`
+
+# 417. Sorting products index by categories
+Using url query string 
+- /products?categories=:categories
+- editing index.js
+- editing index.ejs
+  - title to show categories
+  - adding button to back to all categories
+    - button would disappear if in all categories
