@@ -1,3 +1,5 @@
+TODO learn about Export and Import and Path in a directory
+
 # Overview
 Crucial:
 - Integration: Mongoose & Express
@@ -5,10 +7,12 @@ Crucial:
 - Products Index
 - Products Detail
 - CRUD
+
 Nice to have:
 - Filtering by Category
 
 # 409. Express + Mongoose
+Initializing the project:
 - npm init -y
 - npm i express ejs mongoose
 - mkdir views
@@ -42,7 +46,13 @@ app.listen(3000, () => {
 # 410. Creating Models
 - We create our models schema in different directory
   - We also need to export it.
-- We can move the database logic to a new file called seeds.js
+- We can move the database logic to a new file called `seeds.js``
   - We need to import the models from the models directory
+  - `const Product = require("./models/product");`
 - About `insertMany()`
   - If one validation failed, all in the array would be invalidated as well
+
+# 411. Create Index.ejs (Indexing page)
+- Changes to index.js where now contain mongoose logic
+- Create route /products to index all
+- Create index.ejs and indexing logic
