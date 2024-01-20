@@ -67,3 +67,16 @@ app.listen(3000, () => {
   - It would create an instance of Product
   - Saving it to DB
   - No error handling yet
+
+# 414. Updating Product
+- /product/:id/edit
+- Using app.put request
+  - updating database
+   ```js
+  	const product = await Product.findByIdAndUpdate(id, req.body, {
+		runValidators: true,
+		new: true,
+	});
+  ```
+- creation of edit.ejs
+- redirect to show page after edit
