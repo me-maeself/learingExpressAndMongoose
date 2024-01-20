@@ -92,3 +92,8 @@ app.listen(3000, () => {
 <% } %>
 ```
 
+# 416. Delete Products
+- create app.delete
+  - using findByIdAndDelete()
+- Adding delete button in show.ejs
+  - Button would hit `:id?_method=DELETE`
