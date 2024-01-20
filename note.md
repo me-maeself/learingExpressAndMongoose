@@ -52,7 +52,9 @@ app.listen(3000, () => {
 - About `insertMany()`
   - If one validation failed, all in the array would be invalidated as well
 
-# 411. Create Index.ejs (Indexing page)
+# 411. Create index.ejs (Indexing page)
 - Changes to index.js where now contain mongoose logic
 - Create route /products to index all
 - Create index.ejs and indexing logic
+
+# 412. Product details
