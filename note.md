@@ -80,3 +80,15 @@ app.listen(3000, () => {
   ```
 - creation of edit.ejs
 - redirect to show page after edit
+
+# 415. Making selection option render dynamically
+- add `categories` array in index.js
+- passing `categories` in products/new and products/:id/edit
+- change `new.ejs` and `edit.ejs` to render dynamically
+
+```js
+<% for(let category of categories) { %>
+  <option value="<%= category %>" <%= product.category === category ? "selected" : "" %> ><%= category %></option>
+<% } %>
+```
+
