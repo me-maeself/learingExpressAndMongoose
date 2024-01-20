@@ -58,3 +58,12 @@ app.listen(3000, () => {
 - Create index.ejs and indexing logic
 
 # 412. Product details
+- create show.ejs that show detailed product page
+- add navigation anchor text from products to products/:id
+
+# 413. Creating Product
+- Making new.ejs
+- Creating app.post route in index.js
+  - It would create an instance of Product
+  - Saving it to DB
+  - No error handling yet
