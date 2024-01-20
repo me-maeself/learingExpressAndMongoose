@@ -39,3 +39,10 @@ app.listen(3000, () => {
 	console.log("Listening on port 3000! (express)");
 });
 ```
+# 410. Creating Models
+- We create our models schema in different directory
+  - We also need to export it.
+- We can move the database logic to a new file called seeds.js
+  - We need to import the models from the models directory
+- About `insertMany()`
+  - If one validation failed, all in the array would be invalidated as well
